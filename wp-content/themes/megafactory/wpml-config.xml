@@ -1,0 +1,80 @@
+<wpml-config>
+    <admin-texts>
+		<key name="megafactory_options">
+			<key name="header-phone-text-textarea" />
+			<key name="header-address-text-textarea" />
+			<key name="header-email-text-textarea" />
+			<key name="header-topbar-text-1" />
+			<key name="header-topbar-text-2" />
+			<key name="header-logobar-text-1" />
+			<key name="header-logobar-text-2" />
+			<key name="header-navbar-text-1" />
+			<key name="header-navbar-text-2" />
+			<key name="header-fixed-text-1" />
+			<key name="header-fixed-text-2" />
+			<key name="mobile-menu-text-1" />
+			<key name="mobile-menu-text-2" />
+			<key name="copyright-text-textarea" />
+			<key name="blog-page-title" />
+			<key name="blog-page-desc-textarea" />
+			<key name="blog-more-text" />
+			<key name="archive-more-text" />
+			<key name="category-more-text" />
+			<key name="tag-more-text" />
+			<key name="search-more-text" />
+			<key name="author-more-text" />			
+			<key name="portfolio-client-label" />
+			<key name="portfolio-date-label" />
+			<key name="portfolio-duration-label" />
+			<key name="portfolio-estimation-label" />
+			<key name="portfolio-place-label" />
+			<key name="portfolio-url-label" />
+			<key name="portfolio-category-label" />
+			<key name="portfolio-tags-label" />
+			<key name="portfolio-share-label" />
+		</key>
+	</admin-texts>
+	<custom-fields>
+		<custom-field action="translate">megafactory_post_header_post_title_text</custom-field>
+		<custom-field action="translate">megafactory_post_header_post_title_desc</custom-field>
+		<custom-field action="copy">megafactory_post_header_post_title_video</custom-field>
+		<custom-field action="copy">megafactory_post_video_id</custom-field>
+		<custom-field action="copy">megafactory_post_audio_id</custom-field>
+		<custom-field action="translate">megafactory_post_quote_text</custom-field>
+		<custom-field action="translate">megafactory_post_quote_author</custom-field>
+		<custom-field action="translate">megafactory_post_link_text</custom-field>
+		<custom-field action="copy">megafactory_post_extrenal_link</custom-field>
+		<custom-field action="translate">megafactory_page_header_page_title_text</custom-field>
+		<custom-field action="translate">megafactory_page_header_page_title_desc</custom-field>
+		<custom-field action="copy">megafactory_page_header_page_title_video</custom-field>
+		<custom-field action="translate">megafactory_portfolio_date</custom-field>
+		<custom-field action="translate">megafactory_portfolio_client_name</custom-field>
+		<custom-field action="translate">megafactory_portfolio_duration</custom-field>
+		<custom-field action="translate">megafactory_portfolio_estimation</custom-field>
+		<custom-field action="translate">megafactory_portfolio_place</custom-field>
+		<custom-field action="copy">megafactory_portfolio_url</custom-field>
+		<custom-field action="copy">megafactory_portfolio_video_id</custom-field>
+		<custom-field action="copy">megafactory_portfolio_audio_id</custom-field>
+		<custom-field action="copy">megafactory_portfolio_gmap_latitude</custom-field>
+		<custom-field action="copy">megafactory_portfolio_gmap_longitude</custom-field>
+		<custom-field action="copy">megafactory_portfolio_gmap_marker</custom-field>
+		<custom-field action="translate">megafactory_team_designation</custom-field>
+		<custom-field action="copy">megafactory_team_email</custom-field>
+		<custom-field action="translate">megafactory_testimonial_designation</custom-field>
+		<custom-field action="translate">megafactory_testimonial_company_name</custom-field>
+		<custom-field action="copy">megafactory_testimonial_company_url</custom-field>		
+		<custom-field action="translate">megafactory_event_organiser_name</custom-field>
+		<custom-field action="translate">megafactory_event_organiser_designation</custom-field>
+		<custom-field action="copy">megafactory_event_start_date</custom-field>
+		<custom-field action="translate">megafactory_event_end_date</custom-field>
+		<custom-field action="translate">megafactory_event_time</custom-field>
+		<custom-field action="translate">megafactory_event_cost</custom-field>
+		<custom-field action="copy">megafactory_event_link</custom-field>
+		<custom-field action="translate">megafactory_event_link_text</custom-field>
+		<custom-field action="translate">megafactory_event_venue_name</custom-field>
+		<custom-field action="translate">megafactory_event_venue_address</custom-field>
+		<custom-field action="copy">megafactory_event_email</custom-field>
+		<custom-field action="copy">megafactory_event_phone</custom-field>
+		<custom-field action="copy">megafactory_event_website</custom-field>
+    </custom-fields>	
+</wpml-config>
