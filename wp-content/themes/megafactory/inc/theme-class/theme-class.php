@@ -1327,16 +1327,7 @@ class MegafactoryHeaderElements extends MegafactoryThemeOpt {
 			$post_type = get_post_type_object(get_post_type());
 			if( $post_type ){
 				echo wp_kses_post( $before . $post_type->labels->singular_name . $after );
-        switch ($post_type->labels->singular_name) {
-          case 'Services':
-            // Servicios
-            echo wp_kses_post( $before . 'Servicios' . $after );
-            break;
-          default:
-            // global
-            echo wp_kses_post( $before . $post_type->labels->singular_name . $after );
-            break;
-        }
+
 			}else{
 				$queried_object = get_queried_object();
 				if( $queried_object )
@@ -1365,10 +1356,21 @@ class MegafactoryHeaderElements extends MegafactoryThemeOpt {
 		  echo wp_kses_post( $before . get_the_time('Y') . $after );
 
 		} elseif ( is_single() && !is_attachment() ) {
+
+
 		  if ( get_post_type() != 'post' ) {
 			$post_type = get_post_type_object(get_post_type());
 			$slug = $post_type->rewrite;
-			echo '<a href="' . $homeLink . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a>';
+      switch ($post_type->labels->singular_name) {
+        case 'Services':
+          // code...
+          echo '<a href="' . $homeLink . $slug['slug'] . '/">Servicios</a>';
+          break;
+        default:
+          // Default
+          echo '<a href="' . $homeLink . $slug['slug'] . '/">' . $post_type->labels->singular_name . '</a>';
+          break;
+      }
 			if ($showCurrent == 1) echo ' ' . $delimiter . ' ' . $before . get_the_title() . $after;
 		  } else {
 			$cat = get_the_category(); $cat = $cat[0];
