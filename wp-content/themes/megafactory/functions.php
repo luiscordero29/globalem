@@ -1,5 +1,56 @@
 <?php
 /**
+ *	Luis Cordero info@luiscordero29.com
+ *	Customizando Theme
+ */
+
+ add_action( 'init', 'modals' );
+
+     function modals() {
+
+         $labels = array(
+             'menu_name'           => __( 'Modals', 'components-modal' ),
+             'name'                => _x( 'Modals', 'Post Type General Name', 'components-modal' ),
+             'singular_name'       => _x( 'Modal', 'Post Type Singular Name', 'components-modal' ),
+             'all_items'           => __( 'All Modals', 'components-modal' ),
+             'add_new'             => _x( 'Add New', 'components-modal' ),
+             'add_new_item'        => __( 'Add New Modal', 'components-modal' ),
+             'edit_item'           => __( 'Edit Modal', 'components-modal' ),
+             'update_item'         => __( 'Update Modal', 'components-modal' ),
+             'view_item'           => __( 'View Modal', 'components-modal' ),
+             'search_items'        => __( 'Search Modal', 'components-modal' ),
+             'not_found'           => __( 'Not Found', 'components-modal' ),
+             'not_found_in_trash'  => __( 'Not found in Trash', 'components-modal' ),
+             'parent_item_colon'   => __( 'Parent Modal', 'components-modal' ),
+         );
+
+         // Creamos un array para $args
+
+         $args = array(
+             'label'               => __( 'Portfolios', 'components-modal' ),
+             'description'         => __( 'Portfolio news and reviews', 'components-modal' ),
+             'labels'              => $labels,
+             // Features this CPT supports in Post Editor
+             'supports'            => array( 'title', 'editor', 'revisions'),
+             // You can associate this CPT with a taxonomy or custom taxonomy.
+             'hierarchical'        => false,
+             'public'              => true,
+             'show_ui'             => true,
+             'show_in_menu'        => true,
+             'show_in_nav_menus'   => true,
+             'show_in_admin_bar'   => true,
+             'menu_position'       => 5,
+             'rewrite'             => array('slug' => 'modal'),
+             'can_export'          => true,
+             'has_archive'         => true,
+             'exclude_from_search' => false,
+             'publicly_queryable'  => true,
+             'capability_type'     => 'post',
+         );
+
+         register_post_type( 'modal', $args );
+     }
+/**
  * Megafactory functions and definitions
  *
  */
@@ -48,6 +99,8 @@ if ( class_exists( 'Vc_Manager' ) ) {
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 	require_once MEGAFACTORY_INC . "/woo-functions.php";
 }
+
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
